@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">AutoWish</string>
+
+    <string name="login">Login</string>
+    <string name="login_otp">Login Using OTP</string>
+    <string name="forgotpassword">Forgot Password?</string>
+    <string name="hint_login">Email-ID</string>
+    <string name="enter_phoneno">Enter your mobile number</string>
+    <string name="enter_otp">Enter OTP</string>
+    <string name="hint_password">********</string>
+    <string name="submit">Submit</string>
+
+    <string name="firstname">First Name</string>
+    <string name="lastname">Last Name</string>
+    <string name="email_address">Email Address</string>
+    <string name="choose_pass">Enter Password</string>
+    <string name="re_choose_pass">Re-enter Password</string>
+
+</resources>
