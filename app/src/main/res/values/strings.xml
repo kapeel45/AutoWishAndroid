@@ -9,7 +9,7 @@
     <string name="enter_otp">Enter OTP</string>
     <string name="hint_password">********</string>
     <string name="submit">Submit</string>
-
+    <string name="address">Current Location</string>
     <string name="firstname">First Name</string>
     <string name="lastname">Last Name</string>
     <string name="email_address">Email Address</string>

@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
     android:orientation="vertical">
 
-        //body
+
 
         <ScrollView
             android:layout_width="match_parent"
@@ -60,220 +58,13 @@
 
                     </LinearLayout>
 
-                    //otp//timer//
-                    <LinearLayout
-                        android:id="@+id/linear_otp_section"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:visibility="visible"
-                        android:orientation="vertical">
-
-
-
-                        <TextView
-                            android:id="@+id/text_otp"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="@dimen/margin_10"
-                            android:gravity="center"
-                            android:visibility="gone"
-                            android:text="@string/enter_otp"
-                            android:textColor="@color/black"
-                            android:textSize="@dimen/label_text_size_15" />
-
-                        <LinearLayout
-                            android:id="@+id/linear_otp"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center"
-                            android:layout_marginTop="@dimen/margin_15"
-                            android:orientation="horizontal">
-//one
-                            <LinearLayout
-                                android:layout_width="0dp"
-                                android:layout_height="match_parent"
-                                android:layout_marginLeft="5dp"
-                                android:layout_marginRight="5dp"
-                                android:layout_weight="1"
-                                android:gravity="center">
-
-                                <LinearLayout
-                                    android:layout_width="38dp"
-                                    android:layout_height="38dp"
-                                    android:background="@drawable/bg_round_corner"
-                                    android:gravity="center">
-
-                                    <EditText
-                                        android:id="@+id/edit_one"
-                                        android:layout_width="match_parent"
-                                        android:layout_height="match_parent"
-                                        android:background="@null"
-                                        android:gravity="center"
-                                        android:inputType="number"
-                                        android:maxLength="1"
-                                        android:textColor="@color/black"
-                                        android:textSize="@dimen/label_text_size" />
-                                </LinearLayout>
-                            </LinearLayout>
-//two
-                            <LinearLayout
-                                android:layout_width="0dp"
-                                android:layout_height="match_parent"
-                                android:layout_marginLeft="5dp"
-                                android:layout_marginRight="5dp"
-                                android:layout_weight="1"
-                                android:gravity="center">
-
-                                <LinearLayout
-                                    android:layout_width="38dp"
-                                    android:layout_height="38dp"
-                                    android:background="@drawable/bg_round_corner"
-                                    android:gravity="center">
-
-                                    <EditText
-                                        android:id="@+id/edit_two"
-                                        android:layout_width="match_parent"
-                                        android:layout_height="match_parent"
-                                        android:background="@null"
-                                        android:gravity="center"
-                                        android:inputType="number"
-                                        android:maxLength="1"
-                                        android:textColor="@color/black"
-                                        android:textSize="@dimen/label_text_size" />
-                                </LinearLayout>
-                            </LinearLayout>
-//three
-                            <LinearLayout
-                                android:layout_width="0dp"
-                                android:layout_height="match_parent"
-                                android:layout_marginLeft="5dp"
-                                android:layout_marginRight="5dp"
-                                android:layout_weight="1"
-                                android:gravity="center">
-
-                                <LinearLayout
-                                    android:layout_width="38dp"
-                                    android:layout_height="38dp"
-                                    android:background="@drawable/bg_round_corner"
-                                    android:gravity="center">
-
-                                    <EditText
-                                        android:id="@+id/edit_three"
-                                        android:layout_width="match_parent"
-                                        android:layout_height="match_parent"
-                                        android:background="@null"
-                                        android:gravity="center"
-                                        android:inputType="number"
-                                        android:maxLength="1"
-                                        android:textColor="@color/black"
-                                        android:textSize="@dimen/label_text_size" />
-                                </LinearLayout>
-                            </LinearLayout>
-//four
-                            <LinearLayout
-                                android:layout_width="0dp"
-                                android:layout_height="match_parent"
-                                android:layout_marginLeft="5dp"
-                                android:layout_marginRight="5dp"
-                                android:layout_weight="1"
-                                android:gravity="center">
-
-                                <LinearLayout
-                                    android:layout_width="38dp"
-                                    android:layout_height="38dp"
-                                    android:background="@drawable/bg_round_corner"
-                                    android:gravity="center">
-
-                                    <EditText
-                                        android:id="@+id/edit_four"
-                                        android:layout_width="match_parent"
-                                        android:layout_height="match_parent"
-                                        android:background="@null"
-                                        android:gravity="center"
-                                        android:inputType="number"
-                                        android:maxLength="1"
-                                        android:textColor="@color/black"
-                                        android:textSize="@dimen/label_text_size" />
-                                </LinearLayout>
-                            </LinearLayout>
-
-                            //five
-                            <LinearLayout
-                                android:layout_width="0dp"
-                                android:layout_height="match_parent"
-                                android:layout_marginLeft="5dp"
-                                android:layout_marginRight="5dp"
-                                android:layout_weight="1"
-                                android:gravity="center">
-
-                                <LinearLayout
-                                    android:layout_width="38dp"
-                                    android:layout_height="38dp"
-                                    android:background="@drawable/bg_round_corner"
-                                    android:gravity="center">
-
-                                    <EditText
-                                        android:id="@+id/edit_five"
-                                        android:layout_width="match_parent"
-                                        android:layout_height="match_parent"
-                                        android:background="@null"
-                                        android:gravity="center"
-                                        android:inputType="number"
-                                        android:maxLength="1"
-                                        android:textColor="@color/black"
-                                        android:textSize="@dimen/label_text_size" />
-                                </LinearLayout>
-                            </LinearLayout>
-
-                            //six
-                            <LinearLayout
-                                android:layout_width="0dp"
-                                android:layout_height="match_parent"
-                                android:layout_marginLeft="5dp"
-                                android:layout_marginRight="5dp"
-                                android:layout_weight="1"
-                                android:gravity="center">
-
-                                <LinearLayout
-                                    android:layout_width="38dp"
-                                    android:layout_height="38dp"
-                                    android:background="@drawable/bg_round_corner"
-                                    android:gravity="center">
-
-                                    <EditText
-                                        android:id="@+id/edit_six"
-                                        android:layout_width="match_parent"
-                                        android:layout_height="match_parent"
-                                        android:background="@null"
-                                        android:gravity="center"
-                                        android:inputType="number"
-                                        android:maxLength="1"
-                                        android:textColor="@color/black"
-                                        android:textSize="@dimen/label_text_size" />
-                                </LinearLayout>
-                            </LinearLayout>
-
-                        </LinearLayout>
-
-                        <TextView
-                            android:id="@+id/timer"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="15dp"
-                            android:gravity="center"
-                            android:text="01:56"
-                            android:textColor="@color/app_color_green"
-                            android:textSize="@dimen/label_text_size_24"
-                            android:visibility="visible" />
-                        //submit btn
-                    </LinearLayout>
                     //submit
                     <LinearLayout
                         android:id="@+id/linear_submit"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="@dimen/margin_15"
-                        android:background="@drawable/bg_background_green"
+                        android:background="@drawable/bg_background_purple"
                         android:elevation="5dp">
 
                         <TextView
@@ -289,28 +80,7 @@
                             android:textSize="@dimen/label_text_size_15" />
                     </LinearLayout>
 
-                    //resend
-                    <LinearLayout
-                        android:id="@+id/linear_button_resend"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="@dimen/margin_15"
-                        android:background="@drawable/bg_background_green"
-                        android:elevation="5dp"
-                        android:visibility="gone">
 
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:paddingBottom="8dp"
-                            android:paddingLeft="40dp"
-                            android:paddingRight="40dp"
-                            android:paddingTop="8dp"
-                            android:text="@string/re_send"
-                            android:textAllCaps="true"
-                            android:textColor="@color/white"
-                            android:textSize="@dimen/label_text_size" />
-                    </LinearLayout>
 
                     <TextView
                         android:id="@+id/text_register"
@@ -319,7 +89,7 @@
                         android:layout_marginTop="@dimen/margin_10"
                         android:gravity="center"
                         android:text="@string/signup"
-                        android:visibility="gone"
+                        android:visibility="visible"
                         android:textColor="@color/black"
                         android:textSize="@dimen/label_text_size_17" />
 

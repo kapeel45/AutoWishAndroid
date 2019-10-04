@@ -10,7 +10,7 @@ import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class LoginActivity extends AppCompatActivity implements View.OnClickListener {
-    LinearLayout linear_submit, linear_button_resend, linear_otp_section;
+    LinearLayout linear_submit;
     TextView text_register;
 
 
@@ -21,11 +21,6 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         linear_submit = (LinearLayout) findViewById(R.id.linear_submit);
         linear_submit.setOnClickListener(this);
 
-        linear_button_resend = (LinearLayout) findViewById(R.id.linear_button_resend);
-        linear_button_resend.setOnClickListener(this);
-
-        linear_otp_section = (LinearLayout) findViewById(R.id.linear_otp_section);
-
         text_register = (TextView) findViewById(R.id.text_register);
         text_register.setOnClickListener(this);
 
@@ -35,13 +30,10 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
     public void onClick(View view) {
         switch (view.getId()) {
 
-            case R.id.linear_button_resend:
-                break;
 
             case R.id.linear_submit:
-                linear_otp_section.setVisibility(View.VISIBLE);
-                linear_button_resend.setVisibility(View.VISIBLE);
-                linear_submit.setVisibility(View.GONE);
+               Intent i=new Intent(LoginActivity.this,OTPActivity.class);
+               startActivity(i);
                 break;
 
             case R.id.text_register:
