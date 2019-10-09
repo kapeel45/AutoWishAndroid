@@ -2,6 +2,7 @@ package com.autowish;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.LinearLayout;
@@ -16,6 +17,7 @@ public class OTPActivity extends AppCompatActivity implements View.OnClickListen
 LinearLayout linear_submit,linear_button_resend;
 TextView text_timer;
     TextView timer;
+    Timer t = new Timer();
     int time = 0, total_time = 120;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,6 +36,10 @@ TextView text_timer;
     public void onClick(View view) {
         switch (view.getId()){
             case R.id.linear_submit:
+                t.cancel();
+                Intent i=new Intent(OTPActivity.this,HomeActivity.class);
+                startActivity(i);
+                OTPActivity.this.finish();
                 break;
 
             case R.id.linear_button_resend:
@@ -43,7 +49,7 @@ TextView text_timer;
     private void timer_for_otp() {
         text_timer.setVisibility(View.VISIBLE);
         total_time = 120;
-        final Timer t = new Timer();
+       t = new Timer();
 //Set the schedule function and rate
         t.scheduleAtFixedRate(new TimerTask() {
                                   @Override
