@@ -6,4 +6,65 @@
     android:background="@color/white"
     tools:context=".UIFragments.HomeFragment">
 
+    //heading
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_margin="@dimen/margin_10"
+        android:background="@drawable/bg_round_corner_purple"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:src="@drawable/bike"
+                android:padding="@dimen/padding_3"
+                android:layout_height="30dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:textSize="@dimen/label_text_size_15"
+                android:textColor="@color/black"
+                android:textAllCaps="true"
+                android:text="Bike"
+                android:padding="@dimen/padding_10"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="1dp"
+            android:background="@color/app_color_purple"
+            android:layout_height="match_parent"/>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:src="@drawable/ic_car"
+                android:padding="@dimen/padding_3"
+                android:layout_height="30dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:textSize="@dimen/label_text_size_15"
+                android:textColor="@color/black"
+                android:text="CARS"
+                android:textAllCaps="true"
+                android:padding="@dimen/padding_10"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
 </LinearLayout>

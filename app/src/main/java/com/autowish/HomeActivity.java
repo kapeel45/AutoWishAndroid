@@ -6,8 +6,10 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.autowish.UIFragments.HomeFragment;
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationView;
 
 import androidx.annotation.NonNull;
@@ -15,12 +17,14 @@ import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
+import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 
-public class HomeActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener, View.OnClickListener {
+public class HomeActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener, View.OnClickListener, BottomNavigationView.OnNavigationItemSelectedListener {
     NavigationView navigationView;
     TextView heading;
     public static ImageView image_nav;
+    BottomNavigationView bottomNavigationView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -37,6 +41,10 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
 
         image_nav = (ImageView) findViewById(R.id.image_nav);
         image_nav.setOnClickListener(this);
+
+        bottomNavigationView = (BottomNavigationView) findViewById(R.id.bottom_navigation);
+        bottomNavigationView.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
+
         FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
         HomeFragment frag = new HomeFragment();
         fragmentTransaction.replace(R.id.main_linear, frag);
@@ -48,21 +56,21 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
     public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
         int id = menuItem.getItemId();
         switch (id) {
-            case R.id.nav_home:
+            case R.id.nav_follower:
                 FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
                 HomeFragment frag = new HomeFragment();
                 fragmentTransaction.replace(R.id.main_linear, frag);
                 fragmentTransaction.commit();
                 break;
-            case R.id.nav_routes:
+            case R.id.nav_setting:
                 //Do some thing here
                 // add navigation drawer item onclick method here
                 break;
-            case R.id.nav_orders:
+            case R.id.nav_help:
 //                Intent i = new Intent(HomeNavDrawerActivity.this, OrdersActivity.class);
 //                startActivity(i);
                 break;
-            case R.id.nav_support:
+            case R.id.nav_about:
 //                Intent i_support = new Intent(HomeNavDrawerActivity.this, SupportActivity.class);
 //                startActivity(i_support);
                 break;
@@ -75,6 +83,38 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
         drawer.closeDrawer(GravityCompat.START);
         return false;
     }
+
+    private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
+            = new BottomNavigationView.OnNavigationItemSelectedListener() {
+
+        @Override
+        public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+            Fragment fragment;
+            switch (item.getItemId()) {
+                case R.id.action_notification:
+
+                    return true;
+                case R.id.action_chats:
+
+                    return true;
+
+                case R.id.action_sell:
+
+                    return true;
+
+                case R.id.action_myads:
+
+                    return true;
+
+                case R.id.action_accounts:
+
+                    return true;
+
+            }
+            return false;
+        }
+    };
+
 
     @Override
     public void onClick(View view) {

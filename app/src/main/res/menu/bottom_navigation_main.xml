@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_notification"
+        android:icon="@drawable/ic_notification"
+        android:title="@string/menu_notif"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_chats"
+        android:icon="@drawable/ic_chat"
+        android:title="@string/menu_chat"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_sell"
+        android:icon="@drawable/ic_sell"
+        android:title="@string/menu_sell"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_myads"
+        android:icon="@drawable/ic_ads"
+        android:title="@string/menu_myads"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_accounts"
+        android:icon="@drawable/ic_accounts"
+        android:title="@string/menu_account"
+        app:showAsAction="ifRoom" />
+</menu>
