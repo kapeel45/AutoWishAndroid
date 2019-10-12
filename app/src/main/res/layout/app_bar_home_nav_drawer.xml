@@ -38,17 +38,21 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:text="Home"
+                android:singleLine="true"
+                android:text="32,Holy road, Ludhiana,Punjab"
                 android:textColor="@color/white"
-                android:textSize="@dimen/text_heading"
-                android:textStyle="bold" />
+                android:textSize="@dimen/label_text_size_15"
+               />
 
 
         </LinearLayout>
 
-        <View
-            android:id="@+id/image_notification"
+        <ImageView
+            android:id="@+id/image_loc"
             android:layout_width="30dp"
+            android:layout_marginRight="@dimen/margin_5"
+            android:padding="@dimen/padding_5"
+            android:src="@drawable/loc_white"
             android:layout_height="30dp" />
 
 

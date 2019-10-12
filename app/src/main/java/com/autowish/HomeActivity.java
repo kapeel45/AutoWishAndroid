@@ -8,6 +8,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.autowish.CommonUtils.UserSessionManager;
 import com.autowish.UIFragments.HomeFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationView;
@@ -25,10 +26,13 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
     TextView heading;
     public static ImageView image_nav;
     BottomNavigationView bottomNavigationView;
+    UserSessionManager sessionManager;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
+        sessionManager = new UserSessionManager(HomeActivity.this);
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
                 this, drawer, null, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
@@ -75,7 +79,7 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
 //                startActivity(i_support);
                 break;
             case R.id.nav_logout:
-                finish();
+                sessionManager.clear_session();
                 break;
 
         }
