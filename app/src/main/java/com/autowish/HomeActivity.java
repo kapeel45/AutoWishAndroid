@@ -6,9 +6,11 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.autowish.CommonUtils.UserSessionManager;
+import com.autowish.UIFragments.AccountFragment;
+import com.autowish.UIFragments.ChatFragment;
+import com.autowish.UIFragments.SellFragment;
 import com.autowish.UIFragments.HomeFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationView;
@@ -67,16 +69,16 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
                 fragmentTransaction.commit();
                 break;
             case R.id.nav_setting:
-                //Do some thing here
-                // add navigation drawer item onclick method here
+                Intent i = new Intent(HomeActivity.this, SettingActivity.class);
+                startActivity(i);
                 break;
             case R.id.nav_help:
-//                Intent i = new Intent(HomeNavDrawerActivity.this, OrdersActivity.class);
-//                startActivity(i);
+                Intent i_help = new Intent(HomeActivity.this, HelpSupportActivity.class);
+                startActivity(i_help);
                 break;
             case R.id.nav_about:
-//                Intent i_support = new Intent(HomeNavDrawerActivity.this, SupportActivity.class);
-//                startActivity(i_support);
+                Intent i_about = new Intent(HomeActivity.this, AboutUsActivity.class);
+                startActivity(i_about);
                 break;
             case R.id.nav_logout:
                 sessionManager.clear_session();
@@ -111,7 +113,11 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
                     return true;
 
                 case R.id.action_accounts:
-
+                    FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
+                    AccountFragment frag = new AccountFragment();
+                    fragmentTransaction.replace(R.id.main_linear, frag);
+                    fragmentTransaction.addToBackStack(null);
+                    fragmentTransaction.commit();
                     return true;
 
             }

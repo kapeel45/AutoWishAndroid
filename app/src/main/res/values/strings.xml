@@ -18,7 +18,8 @@
     <string name="signup">Sign Up</string>
     <string name="re_send">Re-send</string>
 
-
+    <string name="email">Email</string>
+    <string name="msg">Message</string>
     <string name="menu_settings">Settings</string>
     <string name="menu_help">Help and Support</string>
     <string name="menu_follower">Followers</string>
@@ -47,4 +48,5 @@
     <string name="internetconnection">Please check you internet connection</string>
     <string name="enter_phone">Please enter phone number</string>
     <string name="valid_phone">Please enter valid phone number</string>
+
 </resources>
