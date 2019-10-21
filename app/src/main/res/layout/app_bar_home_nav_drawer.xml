@@ -39,7 +39,7 @@
                 android:layout_weight="1"
                 android:gravity="center"
                 android:singleLine="true"
-                android:text="32,Holy road, Ludhiana,Punjab"
+                android:text="@string/demo_loc"
                 android:textColor="@color/white"
                 android:textSize="@dimen/label_text_size_15"
                />

@@ -227,6 +227,8 @@
         </ScrollView>
 
     </LinearLayout>
+
+
     <LinearLayout
         android:layout_width="match_parent"
         android:background="@color/app_color_purple"

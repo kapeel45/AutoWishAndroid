@@ -46,13 +46,27 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
+            <TextView
+                android:text="@string/change_phone"
+                android:layout_width="match_parent"
+                android:textColor="@color/black"
+                android:textSize="@dimen/label_text_size_17"
+                android:padding="@dimen/padding_15"
+                android:layout_height="wrap_content"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:background="@color/light_gray"
+                android:alpha=".4"
+                android:layout_height="1dp"/>
+
             <androidx.appcompat.widget.SwitchCompat
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:buttonTint="@color/app_color_green"
                 android:checked="true"
                 android:padding="@dimen/padding_15"
-                android:text="Share phone number to others?"
+                android:text="@string/share_number"
                 android:textColor="@color/black"
                 android:textSize="@dimen/label_text_size_17"
                 />
@@ -70,7 +84,7 @@
                 android:buttonTint="@color/app_color_green"
                 android:checked="false"
                 android:padding="@dimen/padding_15"
-                android:text="Allow Notifications"
+                android:text="@string/allow_notification"
                 android:textColor="@color/black"
                 android:textSize="@dimen/label_text_size_17"
                 />
@@ -82,7 +96,7 @@
                 android:layout_height="1dp"/>
 
             <TextView
-                android:text="Delete Account"
+                android:text="@string/delete_account"
                 android:layout_width="match_parent"
                 android:textColor="@color/black"
                 android:textSize="@dimen/label_text_size_17"

@@ -9,7 +9,7 @@
     <string name="enter_otp">Enter OTP</string>
     <string name="hint_password">********</string>
     <string name="submit">Submit</string>
-    <string name="address">Current Location</string>
+    <string name="address">Location</string>
     <string name="firstname">First Name</string>
     <string name="lastname">Last Name</string>
     <string name="email_address">Email Address</string>
@@ -17,14 +17,18 @@
     <string name="re_choose_pass">Re-enter Password</string>
     <string name="signup">Sign Up</string>
     <string name="re_send">Re-send</string>
-
+    <string name="edit_profile">Edit Profile</string>
     <string name="email">Email</string>
     <string name="msg">Message</string>
+    <string name="update">Update</string>
+
+
     <string name="menu_settings">Settings</string>
     <string name="menu_help">Help and Support</string>
     <string name="menu_follower">Followers</string>
     <string name="menu_about">About Us</string>
     <string name="menu_logout">Logout</string>
+    <string name="menu_home">Home</string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
@@ -49,4 +53,20 @@
     <string name="enter_phone">Please enter phone number</string>
     <string name="valid_phone">Please enter valid phone number</string>
 
+    <string name="gender">Gender</string>
+    <string name="dob">Date of Birth</string>
+
+
+    <string name="demo_name">Danial Jonson</string>
+    <string name="demo_first">Danial</string>
+    <string name="demo_last">Jonson</string>
+    <string name="demo_email">Jonsond@gmail.com</string>
+    <string name="demo_dob">12 Jan 1993</string>"
+    <string name="demo_gender">Female</string>"
+    <string name="demo_bike_name">Activa 5g</string>
+    <string name="demo_loc">32,Holy road, Ludhiana,Punjab</string>
+    <string name="change_phone">Change Phone Number</string>
+    <string name="share_number">Share phone number to others?</string>
+    <string name="allow_notification">Allow Notifications</string>
+    <string name="delete_account">Delete Account</string>
 </resources>

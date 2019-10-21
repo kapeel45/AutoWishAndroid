@@ -63,10 +63,7 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
         int id = menuItem.getItemId();
         switch (id) {
             case R.id.nav_follower:
-                FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
-                HomeFragment frag = new HomeFragment();
-                fragmentTransaction.replace(R.id.main_linear, frag);
-                fragmentTransaction.commit();
+
                 break;
             case R.id.nav_setting:
                 Intent i = new Intent(HomeActivity.this, SettingActivity.class);
@@ -82,6 +79,13 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
                 break;
             case R.id.nav_logout:
                 sessionManager.clear_session();
+                break;
+
+            case R.id.nav_home:
+                FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
+                HomeFragment frag = new HomeFragment();
+                fragmentTransaction.replace(R.id.main_linear, frag);
+                fragmentTransaction.commit();
                 break;
 
         }
