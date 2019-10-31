@@ -10,6 +10,7 @@ import android.widget.TextView;
 import com.autowish.CommonUtils.UserSessionManager;
 import com.autowish.UIFragments.AccountFragment;
 import com.autowish.UIFragments.ChatFragment;
+import com.autowish.UIFragments.MyAdsFragment;
 import com.autowish.UIFragments.SellFragment;
 import com.autowish.UIFragments.HomeFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
@@ -81,11 +82,11 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
                 sessionManager.clear_session();
                 break;
 
-            case R.id.nav_home:
-                FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
-                HomeFragment frag = new HomeFragment();
-                fragmentTransaction.replace(R.id.main_linear, frag);
-                fragmentTransaction.commit();
+            case R.id.nav_notification:
+//                FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
+//                HomeFragment frag = new HomeFragment();
+//                fragmentTransaction.replace(R.id.main_linear, frag);
+//                fragmentTransaction.commit();
                 break;
 
         }
@@ -101,27 +102,37 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
         public boolean onNavigationItemSelected(@NonNull MenuItem item) {
             Fragment fragment;
             switch (item.getItemId()) {
-                case R.id.action_notification:
-
+                case R.id.action_home:
+                    FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
+                    HomeFragment frag = new HomeFragment();
+                    fragmentTransaction.replace(R.id.main_linear, frag);
+                    fragmentTransaction.commit();
                     return true;
                 case R.id.action_chats:
 
                     return true;
 
                 case R.id.action_sell:
-
+                    Intent i_add = new Intent(HomeActivity.this, AddAdActivity.class);
+                    startActivity(i_add);
                     return true;
 
                 case R.id.action_myads:
+                    FragmentTransaction ft_ads = getSupportFragmentManager().beginTransaction();
+                    MyAdsFragment frag_ads = new MyAdsFragment();
+                    ft_ads.replace(R.id.main_linear, frag_ads);
+                    ft_ads.addToBackStack(null);
+                    ft_ads.commit();
+
 
                     return true;
 
                 case R.id.action_accounts:
-                    FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
-                    AccountFragment frag = new AccountFragment();
-                    fragmentTransaction.replace(R.id.main_linear, frag);
-                    fragmentTransaction.addToBackStack(null);
-                    fragmentTransaction.commit();
+                    FragmentTransaction ft_account = getSupportFragmentManager().beginTransaction();
+                    AccountFragment frag_Account = new AccountFragment();
+                    ft_account.replace(R.id.main_linear, frag_Account);
+                    ft_account.addToBackStack(null);
+                    ft_account.commit();
                     return true;
 
             }

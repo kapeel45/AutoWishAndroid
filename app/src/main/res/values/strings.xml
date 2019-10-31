@@ -56,7 +56,12 @@
     <string name="gender">Gender</string>
     <string name="dob">Date of Birth</string>
 
-
+    <string name="demo_descr">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+        Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+        Lorem Ipsum has been the industry standard dummy text ever since the 1500s,
+    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+        Lorem Ipsum has been the industry standard dummy text ever since the 1500s, </string>
     <string name="demo_name">Danial Jonson</string>
     <string name="demo_first">Danial</string>
     <string name="demo_last">Jonson</string>
@@ -64,9 +69,42 @@
     <string name="demo_dob">12 Jan 1993</string>"
     <string name="demo_gender">Female</string>"
     <string name="demo_bike_name">Activa 5g</string>
+    <string name="demo_bike_price">INR 70 per hour</string>
+    <string name="demo_bike_price_extend">+5 extra per km after 2 hours</string>
     <string name="demo_loc">32,Holy road, Ludhiana,Punjab</string>
     <string name="change_phone">Change Phone Number</string>
     <string name="share_number">Share phone number to others?</string>
     <string name="allow_notification">Allow Notifications</string>
     <string name="delete_account">Delete Account</string>
+
+    <string name="follow">Follow</string>
+    <string name="unfollow">Unfollow</string>
+    <string name="allow_notify">Notify me when vehicle is available?</string>
+    <string name="price_perhour">Price per hour(applicable after fixed hours)</string>
+    <string name="delay_cost">Delay Cost</string>
+    <string name="request">Request</string>
+    <string name="add_ads">What you are offering?</string>
+
+    <string name="vehicle_type">Select vehicle type</string>
+
+    <string name="color">Color</string>
+    <string name="model_name">Model Name</string>
+    <string name="carNumber">Car Number</string>
+    <string name="compnay_name">Company Name</string>
+    <string name="fuelType">Fuel Type</string>
+    <string name="makeYear">Manufacture Year</string>
+    <string name="transmission">Transmission</string>
+    <string name="next">Next</string>
+    <string-array name="fuel_type">
+        <item>Petrol</item>
+        <item>Disel</item>
+        <item>Electric</item>
+    </string-array>
+
+    <string-array name="v_color">
+        <item>Red</item>
+        <item>Blue</item>
+        <item>Silver</item>
+        <item>Gold</item>
+    </string-array>
 </resources>

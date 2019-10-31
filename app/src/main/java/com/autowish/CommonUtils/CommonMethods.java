@@ -279,4 +279,13 @@ public class CommonMethods {
         }
         return timmer;
     }
+
+    public static boolean checkIfCarNumber(String number){
+        String validNumber = "^[A-Z]{2}[ -][0-9]{1,2}(?: [A-Z])?(?: [A-Z]*)? [0-9]{4}$";
+        if(number.matches(validNumber)){
+            return true;
+        }else{
+            return false;
+        }
+    }
 }

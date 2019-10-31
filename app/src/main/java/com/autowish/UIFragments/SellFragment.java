@@ -26,7 +26,9 @@ public class SellFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_sell, container, false);
+        View v= inflater.inflate(R.layout.fragment_sell, container, false);
+
+        return v;
     }
 
 }

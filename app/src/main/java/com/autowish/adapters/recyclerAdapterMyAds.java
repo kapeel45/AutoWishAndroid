@@ -8,19 +8,18 @@ import android.view.ViewGroup;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import com.autowish.AdDetailActivity;
+import com.autowish.AddAdActivity;
 import com.autowish.R;
-import java.util.ArrayList;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-public class recyclerAdapterHomeAds extends RecyclerView.Adapter<recyclerAdapterHomeAds.MyViewHolder> {
+public class recyclerAdapterMyAds extends RecyclerView.Adapter<recyclerAdapterMyAds.MyViewHolder> {
 
     int count;
     Context context;
 
-    public recyclerAdapterHomeAds(Context context, int count) {
+    public recyclerAdapterMyAds(Context context, int count) {
         this.count = count;
         this.context = context;
     }
@@ -28,7 +27,7 @@ public class recyclerAdapterHomeAds extends RecyclerView.Adapter<recyclerAdapter
     @NonNull
     @Override
     public MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.single_row_ads, parent, false);
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.single_row_myads, parent, false);
         MyViewHolder vh = new MyViewHolder(view);
         return vh;
     }
@@ -40,7 +39,7 @@ public class recyclerAdapterHomeAds extends RecyclerView.Adapter<recyclerAdapter
         holder.linear_main.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(context, AdDetailActivity.class);
+                Intent i = new Intent(context, AddAdActivity.class);
                 context.startActivity(i);
             }
         });
